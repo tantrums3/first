@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScripts/ECMAScripts</title>
+    <!--PLEASE NOTE:---------------------------------------------------------------------->
+    <!--This page uses JavaScript from the EMCAScript Edition 7 of the year 2016.-->
+    <!--JavaScript/ECMAScript(1-7) was created to be best supported in browsers
+        that include Netscape & Mozilla Firefox, however, ECMAScript 7 is new and
+        therefore it is poorly supported in ALL browsers. ECMAScript 7 is only
+        being used for the purpose of practice since it is not fit for current versions of
+        major browsers. Major browsers that the W3Schools Website list includes
+        IE10, Edge 12, Opera 15, Safari 6, Firefox 4 & 21, and Chrome 23; and
+        although Vivaldi 1.11 is not on the list it is a contender.-->
+    <!--Internet Explorer 9 uses EMCAScript5/2011's equivalent with
+        Microsoft JScript 9.0/2011, therefore this script is not compatible with IE9/10.-->
+    <!--END OF NOTE----------------------------------------------------------------------->
+</head>
+<body>
+    <p>
+        <h1>JavaScript/ECMAScript Lessons</h1>
+        <h4>Lesson 1: The Document Object</h4>
+        <hr />
+        Before reading the lesson, please note that the abbreviation JS is used here to represent JavaScript
+        so that the entire word does not have to be written out.<br /> Also, please note that you can reference
+        the W3School's website to find the source from where I base the 'Date & Time' lesson.
+        <script>window.alert("JavaScript is ENABLED!")</script>
+        <noscript style="background-color:lightcyan; color:red; border: 2px solid black; padding:30px";>
+        Please enable JavaScript under settings in browser menu, then refresh this page.</noscript>
+        <h6>document.write</h6>
+        The JS code that creates on the screen the texts to read is the 'write' property.<br />
+        Using document.write then placing in the brackets what text to display will create
+        whatever it is that should appear.<br />
+        With the document.write object, you can write a line [write(ln)] that adds a line after the text,<br />
+        or you can write a line that does not add a new line after the statement[write()].<br />
+        <i>Here is an example:</i>
+        < script>document.write("Hello ", [1 + 1], " you!");< /script>
+        <h6>document.getElementBy</h6>
+        You can use 'document.getElementBy Name, Id, classname, and tagname. For the purpose of this lesson we are using Id.<br />
+        <i>Here is an example:</i> "document.getElementById('demo').innerHTML = Date()".<br />
+        The JS code that makes the time appear when the user clicks the button is broken down as follows:<br /> 
+        The JS code is placed inside the HTML element tag < button > < / button >.<br /> 
+        The HTML tag code includes the 'type' attribute with the "button" variant, 
+        followed by the onclick attribute, where the JS code is placed
+        as the variant for the 'onclick' attribute of the 'button' element tag.<br /> 
+        So, the first attribute you will see is the 'type' with button, and the second attribute is the 'onclick'
+        attribute with the JS code.<br />
+        < button  type = " button "  onclick = " JS code here " > followed by user instructions < / button >.
+        <br />The 'type' attribute creates the 'id' for the place where the date and time will display on the screen
+        < p   id = " demo " ></ p >.<br /> 
+        The "document.getElementById('#').innerHTML = #()" is considered a
+        nested (a tag listed in the body of the document) HTML element content where the getElementById creates the ID demo that is later retrieved by the
+        paragraph element tag.<br /> 
+        The .innerHTML instructs what content [Date()] the demo ID is to display
+        inside the page.<br /> 
+        The getElementById can be used to create ID's to perform all sorts of functions.<br />
+        One function can be changing attributes of an element tag or even changing the variant of an attribute.
+        <hr />
+        <h3>Sample:</h3>
+        In all, the following is what you have:    
+        <h5>Hidden Code: </h5>
+        < script>document.write("Hello ", [1 + 1], " you!");< /script>
+        < button type = "button"
+        onclick = "document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.
+        < /button >
+        < p id="demo">< /p>
+    </p>   
+        <!------------------------------------'Date & Time' Script------------------------------------------>
+        <!--Code script is the from W3Schools Website for displaying 'Date & Time'.-->
+        <!--https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst.-->
+        <!--This is the start of the 'Date & Time' script.-->    
+        <h5>Displayed Function: </h5><h2>My First JavaScript</h2>
+        <script>document.write("Hello ", [1 + 1], " you!");</script>    
+        <button type="button"
+                onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.
+        </button>    
+        <p id="demo"></p>
+        <!--Will show like the following sample: Mon Sep 18 2017 06:48:20 GMT-0400 (Eastern Daylight Time)].-->
+        <!--This is the end of the 'Date & Time' script.-->
+        <!---------------------------------------------------------------------------------------------------> 
+    
+
+    <button type="button" onclick="javascript:window.location.href='Html2-lesson2.html'" style="background-color:yellow">Lesson 2</button>
+   
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        <h1>JavaScript/ECMAScript Lessons Continued...</h1>
+        <h4>Lesson 2: HTML Attributes & Variable Changes</h4>
+        <hr />
+        
+        As before, the abbreviation JS is used here as well as in all future lessons to represent JavaScript
+        so that the entire word does not have to be written out.<br />         
+        Also, as mentioned before, you can reference
+        the W3School's website to find the source from where I base all lessons.
+        <script>window.alert("JavaScript is ENABLED!")</script><noscript style="background-color:lightcyan; color:red; border: 2px solid black; padding:30px" ;>
+        Please enable JavaScript under settings in browser menu, then refresh this page.
+        </noscript>
+        <h6>Making Changes</h6>
+        Previously, the first half of the JS code was explained to show how it creates the id.<br /> 
+        Now in this lesson is the review of the part of the JS code that creates the action, through 
+        the HTML portion of the getElementById attribute.<br />
+        In the last lesson, .innerHTML was used to display the date and time.<br /> This time HTML 
+        instructs what to change in the display.<br /> The HTML is going to be used to  
+        to change an attribute of an element tag and it will be used to change the variant of an attribute.<br />
+        In the first portion of the sample, you see the HTML element for source being used to swap-out the image when the 
+        button is clicked.<br />
+        In the second portion of the sample, you see the HTML element for Style being used to make the image vanish and return.<br />
+        The samples just show that any HTML element can be used to make changes, so long the id is created 
+        with the document.getElementById part of the attribute.
+        <hr />
+        <h3>Sample:</h3><br />
+        In all, the following is what you have:
+    </p>
+    <p>
+        <h5>Hidden Code: </h5>
+        < img id="bigEyes" src="images/pic_eyesopen.gif" alt="Picture of opened eyes." style="width:96px; height:54px;">
+        < button onclick = "document.getElementById('bigEyes').src='images/pic_eyesopen.gif'">Wake up< /button>        
+        < button onclick="document.getElementById('bigEyes').src='images/pic_eyesshut.gif'">Go to sleep< /button>< br />
+        < button type="button" onclick="document.getElementById('bigEyes').style.display='none'">Go away< /button>
+        < button type="button" onclick="document.getElementById('bigEyes').style.display='block'">Come back< /button>
+        <h5>Displayed Function: </h5><h2>Big Eyes</h2>
+    </p>
+    <!------------------------------------'HTML Content' Script------------------------------------------>
+    <!--Code script is the from W3Schools Website for displaying 'HTML Content'.-->
+    <!--https://www.w3schools.com/js/js_intro.asp.-->
+    <!--This is the start of the 'HTML Content' script.-->
+    <pre>
+        <img id="bigEyes" src="images/pic_eyesopen.gif" alt="Picture of opened eyes." style="width:96px; height:54px;">
+        <button onclick="document.getElementById('bigEyes').src='images/pic_eyesopen.gif'">Wake up</button>
+        <button onclick="document.getElementById('bigEyes').src='images/pic_eyesshut.gif'">Go to sleep</button>
+        <button type="button" onclick="document.getElementById('bigEyes').style.display='none'">Go away</button>
+        <button type="button" onclick="document.getElementById('bigEyes').style.display='block'">Come back</button>
+    </pre>
+    <!--This is the end of the 'HTML Content' script.-->
+    <!--------------------------------------------------------------------------------------------------->
+
+
+    <button type="button" onclick="javascript:window.location.href='Html3-lesson3.html'" style="background-color:yellow">Lesson 3</button>
+</body>
+</html>

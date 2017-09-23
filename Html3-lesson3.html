@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScripts/ECMAScripts</title>
+    <!--PLEASE NOTE:---------------------------------------------------------------------->
+    <!--Always remember to leave a script that will inform the user if JavaSript needs  
+        to be enabled within the browser settings. It should be a given that JavaScript
+        comes already available, but there are those who will shut it off and forget
+        to turn it back on. For notifying the user through a message, you can find other scripting
+        samples on Stackoverflow: 
+        https://stackoverflow.com/questions/121203/how-to-detect-if-javascript-is-disabled.
+        Good luck!
+        The following is the code and the message for displaying
+        that will detect if JavaScript is enabled and notify the user of the situation.
+        --->
+    <!--
+        This goes inside the body of the document.
+        <noscript>        
+            You don't have JavaScript enabled; please enable it.<br /> <br /> 
+            To enable JavaScript, find your browser's 'Menu', then scroll through the list of option and find the browser's 'Settings'.<br /> 
+            Under the Settings option, look around and you fill find the location where you can turn JavaScript on or off. <br />
+            Choose to allow JavaScript to run.<br />
+            You may have to save your choice if your browsers has a save button, if not then just refresh this 
+            tutorial page that you are trying to view. <br />
+            The JavaScript dependant parts of the tutorial will be available. 
+        </noscript>
+        -->
+    <!--END OF NOTE----------------------------------------------------------------------->
+</head>
+<body>
+    <p>
+        <h1>JavaScript/ECMAScript Lessons</h1>
+        <h4>Lesson 3: HTML attributes for the Document Object</h4>
+        <hr />
+        Before reading the lesson, please note that the abbreviation JS is used here to represent JavaScript
+        so that the entire word does not have to be written out.<br />
+        Also, please note that you can reference
+        the W3School's website to find the source from where I base all my lessons.
+        
+        <script>window.alert("JavaScript is ENABLED!")</script><noscript style="background-color:lightcyan; color:red; border: 2px solid black; padding:30px" ;>
+            
+            Please enable JavaScript under settings in browser menu, then refresh this page.
+        </noscript>
+        <h6>Using Attributes</h6>
+        When writing the document.getElementById tag, there will need to be instructions that follow the period.<br />
+        The instructions will always pertain to HTML, so therefore you need to be familiar
+        the HTML attributes that will be possibilities to use with the [document.getElementById] tag.<br />
+        There are several version of HTML ranging from 2.0 to 5 but any version before 5 is deprecated (out-dated)
+        and do not work with well with newer versions of other technology (JavaScript, CSS, browser, etcetera).<br />
+        So, be aware of what you are working with before you pick a version of HTML to use.<br />
+        <br />
+        HTML Attributes:<br />
+        <ul>
+            <li>innerHTML</li>
+            <li>src</li>
+            <li>style.display</li>
+            <li>style.fontSize</li>
+
+
+        </ul>
+        <br />
+        More HTML attributes can be found at https://www.w3schools.com/tags/ref_attributes.asp.
+        <br />
+        <hr />
+        <!--ATTRIBUTE SAMPLE-->
+        <h3>Sample:</h3>
+        <h5>Hidden Code: </h5>
+        < script>document.writeln("Thank you for checking out this tutorial.")< /script>
+        <h5>Displayed Function: </h5>
+        YOU ROCK!!!!!!<script>document.writeln("Thank you for checking out this tutorial.")</script>
+    </p>
+    <button type="button" onclick="javascript:window.location.href='index.html'" style="background-color:yellow">Tutorial Home</button>
+   
+</body>
+</html>
